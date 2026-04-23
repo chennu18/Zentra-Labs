@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Zentra Login</title>
+<style>
+body {
+    font-family: Arial;
+    background: #0a1f44;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+}
+button {
+    padding: 10px;
+    width: 100%;
+    background: blue;
+    color: white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+<h2>Zentra Login</h2>
+
+<input id="user" placeholder="Username">
+<input id="pass" type="password" placeholder="Password">
+
+<button onclick="login()">Login</button>
+</div>
+
+<script>
+function login(){
+    let u = document.getElementById("user").value;
+    let p = document.getElementById("pass").value;
+
+    if(u === "admin" && p === "1234"){
+        window.location.href = "home.html";
+    } else {
+        alert("Wrong Username or Password");
+    }
+}
+</script>
+
+</body>
+</html>

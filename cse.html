@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSE Projects - Zentra</title>
+<style>
+body {
+    font-family: Arial;
+    background: #f4f6f9;
+}
+.project {
+    background: white;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #ccc;
+}
+.details {
+    display: none;
+    background: #eef2f7;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+button {
+    background: green;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Zentra Labs - CSE Projects</h1>
+
+<div class="project" onclick="toggle('p1')">
+Online Voting System
+
+<div id="p1" class="details">
+<p><b>Overview:</b> A secure platform for online elections.</p>
+
+<p><b>Features:</b></p>
+<ul>
+<li>User Login</li>
+<li>Vote Casting</li>
+<li>Result Display</li>
+</ul>
+
+<p><b>Technologies:</b> HTML, CSS, JavaScript</p>
+<p><b>Price:</b> ₹2999 – ₹4999</p>
+
+<button onclick="bookProject('Online Voting System')">Book This Project</button>
+
+<p style="color:red;">
+*Full code, PPT & report provided after booking*
+</p>
+</div>
+</div>
+
+<br>
+
+<a href="https://wa.me/91XXXXXXXXXX">Contact on WhatsApp</a>
+
+<script>
+function toggle(id){
+    let x = document.getElementById(id);
+    x.style.display = (x.style.display === "block") ? "none" : "block";
+}
+
+function bookProject(name){
+    let number = "918106891890";
+    let message = "Hello Zentra Labs, I want the project: " + name;
+
+    window.open("https://wa.me/" + number + "?text=" + encodeURIComponent(message));
+}
+</script>
+
+</body>
+</html>
