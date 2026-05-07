@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Zentra Labs - Engineering Projects</title>
+
+<style>
+body{
+    font-family: Arial;
+    background:#f4f6f9;
+    margin:0;
+    padding:20px;
+}
+
+h1{
+    text-align:center;
+    color:#222;
+}
+
+.department{
+    margin-top:40px;
+}
+
+.department h2{
+    background:#1f4e79;
+    color:white;
+    padding:10px;
+    border-radius:8px;
+}
+
+.project{
+    background:white;
+    margin:20px 0;
+    padding:15px;
+    border-radius:10px;
+    cursor:pointer;
+    box-shadow:0 0 10px #ccc;
+}
+
+.details{
+    display:none;
+    background:#eef2f7;
+    padding:10px;
+    margin-top:10px;
+    border-radius:5px;
+}
+
+button{
+    background:green;
+    color:white;
+    padding:8px 12px;
+    border:none;
+    border-radius:5px;
+    margin-top:10px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0b7a0b;
+}
+
+.contact{
+    margin-top:40px;
+    text-align:center;
+    font-size:18px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Zentra Labs - Engineering Projects</h1>
+
+<!-- ================= CSE ================= -->
+
+<div class="department">
+<h2>CSE Projects</h2>
+
+<div class="project" onclick="toggle('cse1')">
+Online Voting System
+
+<div id="cse1" class="details">
+<p><b>Overview:</b> Secure online election platform.</p>
+
+<p><b>Features:</b></p>
+<ul>
+<li>User Login</li>
+<li>Vote Casting</li>
+<li>Live Results</li>
+</ul>
+
+<p><b>Technologies:</b> HTML, CSS, JavaScript</p>
+<p><b>Price:</b> ₹2999 – ₹4999</p>
+
+<button onclick="bookProject('Online Voting System')">
+Book This Project
+</button>
+</div>
+</div>
+
+<div class="project" onclick="toggle('cse2')">
+Library Management System
+
+<div id="cse2" class="details">
+<p><b>Overview:</b> Digital library management software.</p>
+
+<p><b>Features:</b></p>
+<ul>
+<li>Book Tracking</li>
+<li>Student Login</li>
+<li>Issue & Return</li>
+</ul>
+
+<p><b>Technologies:</b> PHP, MySQL</p>
+<p><b>Price:</b> ₹3500 – ₹6000</p>
+
+<button onclick="bookProject('Library Management System')">
+Book This Project
+</button>
+</div>
+</div>
+
+</div>
+
+<!-- ================= ECE ================= -->
+
+<div class="department">
+<h2>ECE Projects</h2>
+
+<div class="project" onclick="toggle('ece1')">
+Smart Traffic Control System
+
+<div id="ece1" class="details">
+<p><b>Overview:</b> Automated traffic signal control using sensors.</p>
+
+<p><b>Features:</b></p>
+<ul>
+<li>Vehicle Detection</li>
+<li>Automatic Signal Timing</li>
+<li>Emergency Vehicle Priority</li>
+</ul>
+
+<p><b>Technologies:</b> Arduino, IoT</p>
+<p><b>Price:</b> ₹5000 – ₹9000</p>
+
+<button onclick="bookProject('Smart Traffic Control System')">
+Book This Project
+</button>
+</div>
+</div>
+
+<div class="project" onclick="toggle('ece2')">
+Home Automation System
+
+<div id="ece2" class="details">
+<p><b>Overview:</b> Control home appliances remotely.</p>
+
+<p><b>Features:</b></p>
+<ul>
+<li>Mobile App Control</li>
+<li>WiFi Enabled</li>
+<li>Energy Saving</li>
+</ul>
+
+<p><b>Technologies:</b> ESP32, IoT</p>
+<p><b>Price:</b> ₹4500 – ₹8500</p>
+
+<button onclick="bookProject('Home Automation System')">
+Book This Project
+</button>
+</div>
+</div>
+
+</div>
+
+<!-- ================= EEE ================= -->
+
+<div class="department">
+<h2>EEE Projects</h2>
+
+<div class="project" onclick="toggle('eee1')">
+Solar Power Monitoring System
+
+<div id="eee1" class="details">
+<p><b>Overview:</b> Monitor solar panel performance.</p>
+
+<p><b>Features:</b></p>
+<ul>
+<li>Voltage Tracking</li>
+<li>Power Usage Analysis</li>
+<li>Mobile Alerts</li>
+</ul>
+
+<p><b>Technologies:</b> Arduino, Sensors</p>
+<p><b>Price:</b> ₹4000 – ₹8000</p>
+
+<button onclick="bookProject('Solar Power Monitoring System')">
+Book This Project
+</button>
+</div>
+</div>
+
+<div class="project" onclick="toggle('eee2')">
+Automatic Street Light System
+
+<div id="eee2" class="details">
+<p><b>Overview:</b> Street lights turn ON/OFF automatically.</p>
+
+<p><b>Features:</b></p>
+<ul>
+<li>Light Sensors</li>
+<li>Energy Efficient</li>
+<li>Low Maintenance</li>
+</ul>
+
+<p><b>Technologies:</b> Embedded Systems</p>
+<p><b>Price:</b> ₹3500 – ₹7000</p>
+
+<button onclick="bookProject('Automatic Street Light System')">
+Book This Project
+</button>
+</div>
+</div>
+
+</div>
+
+<!-- ================= MECH ================= -->
+
+<div class="department">
+<h2>Mechanical Projects</h2>
+
+<div class="project" onclick="toggle('mech1')">
+Automatic Water Pump System
+
+<div id="mech1" class="details">
+<p><b>Overview:</b> Automated water level control system.</p>
+
+<p><b>Features:</b></p>
+<ul>
+<li>Water Level Detection</li>
+<li>Automatic Motor Control</li>
+<li>Dry Run Protection</li>
+</ul>
+
+<p><b>Technologies:</b> Sensors, Relay Module</p>
+<p><b>Price:</b> ₹4000 – ₹7500</p>
+
+<button onclick="bookProject('Automatic Water Pump System')">
+Book This Project
+</button>
+</div>
+</div>
+
+<div class="project" onclick="toggle('mech2')">
+Smart Irrigation System
+
+<div id="mech2" class="details">
+<p><b>Overview:</b> Automatic irrigation based on soil moisture.</p>
+
+<p><b>Features:</b></p>
+<ul>
+<li>Soil Monitoring</li>
+<li>Water Saving</li>
+<li>Automated Sprinklers</li>
+</ul>
+
+<p><b>Technologies:</b> IoT, Sensors</p>
+<p><b>Price:</b> ₹5000 – ₹9500</p>
+
+<button onclick="bookProject('Smart Irrigation System')">
+Book This Project
+</button>
+</div>
+</div>
+
+</div>
+
+<!-- ================= CIVIL ================= -->
+
+<div class="department">
+<h2>Civil Projects</h2>
+
+<div class="project" onclick="toggle('civil1')">
+Smart City Drainage System
+
+<div id="civil1" class="details">
+<p><b>Overview:</b> Efficient drainage monitoring system.</p>
+
+<p><b>Features:</b></p>
+<ul>
+<li>Flood Detection</li>
+<li>Water Flow Monitoring</li>
+<li>Alert System</li>
+</ul>
+
+<p><b>Technologies:</b> IoT, Sensors</p>
+<p><b>Price:</b> ₹6000 – ₹10000</p>
+
+<button onclick="bookProject('Smart City Drainage System')">
+Book This Project
+</button>
+</div>
+</div>
+
+<div class="project" onclick="toggle('civil2')">
+Earthquake Resistant Building Model
+
+<div id="civil2" class="details">
+<p><b>Overview:</b> Structural safety demonstration model.</p>
+
+<p><b>Features:</b></p>
+<ul>
+<li>Shock Resistance</li>
+<li>Strong Framework</li>
+<li>Research Based Design</li>
+</ul>
+
+<p><b>Technologies:</b> Structural Design</p>
+<p><b>Price:</b> ₹7000 – ₹12000</p>
+
+<button onclick="bookProject('Earthquake Resistant Building Model')">
+Book This Project
+</button>
+</div>
+</div>
+
+</div>
+
+<!-- ================= CONTACT ================= -->
+
+<div class="contact">
+<a href="https://wa.me/918106891890">
+Contact on WhatsApp
+</a>
+</div>
+
+<script>
+
+function toggle(id){
+    let x = document.getElementById(id);
+
+    x.style.display =
+    (x.style.display === "block")
+    ? "none"
+    : "block";
+}
+
+function bookProject(name){
+
+    let number = "918106891890";
+
+    let message =
+    "Hello Zentra Labs, I want the project: " + name;
+
+    window.open(
+        "https://wa.me/" +
+        number +
+        "?text=" +
+        encodeURIComponent(message)
+    );
+}
+
+</script>
+
+</body>
+</html>
